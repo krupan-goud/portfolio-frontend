@@ -26,10 +26,9 @@ const Contact = () => {
       email: userDetails.email,
       message: userDetails.message
     }
-    console.log("data", data);
 
     const result = await sendUserDetails(data);
-    console.log("result:::", result);
+    alert("Message Sent Successfully!!!")
   }
 
   return (
