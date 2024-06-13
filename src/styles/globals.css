@@ -54,3 +54,14 @@ h4 {
 .companyName {
   margin-top: 25px !important;
 }
+
+.innerHeading {
+  font-size: 50px !important;
+}
+
+@media only screen and (max-width: 431px) {
+  h3 {
+    font-size: 23px !important;
+    line-height: 45px !important;
+  }
+}
