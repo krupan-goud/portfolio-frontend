@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/pages/Work.module.css';
+import styles from '../styles/pages/work.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { IoCodeSlash, IoServerSharp } from "react-icons/io5";
 import { MdOutlineDesignServices, MdComputer } from "react-icons/md";
