@@ -11,7 +11,7 @@ const Alert: React.FC<AlertProps> = ({ message, onClose }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             onClose();
-        }, 5000);
+        }, 500000);
 
         return () => clearTimeout(timer);
     }, [onClose]);
@@ -32,7 +32,7 @@ const Alert: React.FC<AlertProps> = ({ message, onClose }) => {
     return ReactDOM.createPortal(
         <div className={styles.alertOverlay}>
             <div className={styles.alertBox}>
-                <div className={styles.alertMessage}>{message}</div>
+                <div><p className={styles.alertMessage}>{message}</p></div>
                 <button className={styles.alertClose} onClick={onClose}>
                     &times;
                 </button>
