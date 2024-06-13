@@ -23,7 +23,7 @@ const Contact = () => {
     message: ''
   });
 
-  const onchange = (e: any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setUserDetails({ ...userDetails, [name]: value })
     if (value.trim() === '') {
@@ -73,9 +73,9 @@ const Contact = () => {
           <Col lg={6} md={6} sm={12} xs={12}>
             <Card className={styles.card}>
               <h2 className={`${styles.contactHeading} text-center mb-3`}>Contact</h2>
-              <InputField label={'Full Name'} type={'text'} name={'name'} value={userDetails.name} placeholder={'Enter Full Name'} required={true} rows={0} cols={0} onchange={onchange} error={validationErrors.name} />
-              <InputField label={'Email Address'} type={'email'} name={'email'} value={userDetails.email} placeholder={'Enter Email Address'} required={true} rows={0} cols={0} onchange={onchange} error={validationErrors.email} />
-              <InputField label={'Message'} type={'textarea'} name={'message'} value={userDetails.message} placeholder={'Hey Krupan, I love your website! I\'d like to discuss some opportunities that you might find interesting! 💐'} required={true} rows={10} cols={12} onchange={onchange} error={validationErrors.message} />
+              <InputField label={'Full Name'} type={'text'} name={'name'} value={userDetails.name} placeholder={'Enter Full Name'} required={true} rows={0} cols={0} onChange={handleChange} error={validationErrors.name} />
+              <InputField label={'Email Address'} type={'email'} name={'email'} value={userDetails.email} placeholder={'Enter Email Address'} required={true} rows={0} cols={0} onChange={handleChange} error={validationErrors.email} />
+              <InputField label={'Message'} type={'textarea'} name={'message'} value={userDetails.message} placeholder={'Hey Krupan, I love your website! I\'d like to discuss some opportunities that you might find interesting! 💐'} required={true} rows={10} cols={12} onChange={handleChange} error={validationErrors.message} />
               <Button className={`${styles.hireMeButton} mt-4`} onClick={onSubmitHandler} disabled={!buttonDisabled}  >    Send Message  </Button>
               <p className={`${styles.copyRights} mt-4`}>Copyrights © 2024 Krupan Portfolio</p>
               <p className={`${styles.copyRights} mb-4`} > Designed and Developed by Krupan Goud Shivabandhi</p>
