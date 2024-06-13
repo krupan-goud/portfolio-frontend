@@ -1,0 +1,56 @@
+/* styles/global.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100% !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 88px !important;
+  font-weight: bolder !important;
+  color: #ffffff !important;
+  margin-bottom: 20px !important;
+}
+
+h3 {
+  font-size: 28px !important;
+  font-weight: bolder !important;
+  color: #ffffff !important;
+  line-height: 60px !important;
+}
+
+p {
+  line-height: 30px !important;
+  color: #ffffff !important;
+}
+
+h4 {
+  color: #ffffff !important;
+}
+
+.header {
+  background-color: #000000;
+  padding: 40px 15px 15px;
+}
+
+.cardStyles {
+  cursor: pointer;
+  border-radius: 20px !important;
+  padding: 10px;
+  background-color: rgba(57, 57, 57, 0.5) !important;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.cardStyles:hover {
+  border-color: rgba(57, 57, 57, 1);
+  transform: scale(1.01);
+}
+
+.companyName {
+  margin-top: 25px !important;
+}

@@ -1,0 +1,31 @@
+.backgroundImage {
+  background: lightblue url("/images/bglogo6.jpg") no-repeat center center fixed;
+  background-size: cover;
+  max-height: 400vh;
+  width: 100%;
+}
+
+.overViewText {
+  margin-top: 20px;
+  padding-bottom: 160px;
+}
+
+.nameText {
+  color: #6b2ea5;
+}
+
+.BrandColor {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+.navbar {
+  padding-top: 19px;
+}
+
+.textDecoration {
+  cursor: not-allowed;
+  text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+.verticalLine {
+  margin-top: 20px;
+  width: 2px;
+  background-color: #ccc;
+  height: 100%;
+  margin: auto;
+}
+
+.card {
+  border-radius: 20px !important;
+  background-color: rgb(16 13 37 / 1);
+  padding: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.hireMeButton {
+  margin: 4px;
+  text-align: center;
+  background-image: linear-gradient(#6b2ea5, #7f53a8);
+  background-color: transparent;
+  border: none !important;
+  min-height: 60px;
+  transition: transform 0.5s, background-image 0.5s;
+  font-weight: bold;
+}
+
+.hireMeButton:hover {
+  background-image: linear-gradient(#232526, #414345);
+  background-color: transparent;
+  transform: scale(1.05);
+}
+
+.copyRights {
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  text-align: center;
+  color: #af9b9b !important;
+}
+
+.imageBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border: 2px solid rgba(57, 57, 57, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.imageBorder:hover {
+  border-color: rgba(57, 57, 57, 1);
+  transform: scale(1.1);
+}
+
+.devLogo {
+  padding: 20px;
+  margin: 20px;
+}
+
+.colPadding {
+  padding-bottom: 20px;
+}
+
+.ColMargin {
+  margin-top: 20px;
+}
+
+.lineStyle {
+  list-style-type: "✔";
+  padding: 5px;
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.invalid {
+  animation: shake 0.5s;
+}
+
+.heading {
+  font-size: 60px !important;
+  text-decoration: underline !important;
+}
+
+.contactHeading {
+  font-size: 55px !important;
+  color: #ffffff;
+}
