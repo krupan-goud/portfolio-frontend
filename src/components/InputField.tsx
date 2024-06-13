@@ -3,43 +3,61 @@ import { Form } from 'react-bootstrap';
 import styles from '../styles/components/InputField.module.css';
 
 interface PropsTypes {
-    label: string,
-    type: string,
-    name: string,
-    value: string,
-    placeholder: string,
-    required: boolean,
-    onchange: any,
-    rows: number,
-    cols: number
+    label: string;
+    type: string;
+    name: string;
+    value: string;
+    placeholder: string;
+    required?: boolean;
+    onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+    rows?: number;
+    cols?: number;
+    error?: string;
 }
 
-const InputField = ({ label, type, name, value, placeholder, required = false, rows, cols, onchange }: PropsTypes) => {
+const InputField: React.FC<PropsTypes> = ({
+    label,
+    type,
+    name,
+    value,
+    placeholder,
+    required = false,
+    rows,
+    cols,
+    onChange,
+    error
+}) => {
     return (
         <div>
             {label && <Form.Label className={styles.label}>{label}</Form.Label>}
             {type !== 'textarea' ? (
-                <input
-                    className={styles.inputfield}
-                    type={type}
-                    name={name}
-                    value={value}
-                    placeholder={placeholder}
-                    required={required}
-                    onChange={onchange}
-                />
+                <>
+                    <input
+                        className={styles.inputfield}
+                        type={type}
+                        name={name}
+                        value={value}
+                        placeholder={placeholder}
+                        required={required}
+                        onChange={onChange}
+                    />
+                    {error && <p className={styles.errorMessage}>{error}</p>}
+                </>
             ) : (
-                <Form.Control
-                    as="textarea"
-                    className={`${styles.inputfield} ${styles.textarea}`}
-                    name={name}
-                    value={value}
-                    placeholder={placeholder}
-                    required={required}
-                    rows={rows}
-                    cols={cols}
-                    onChange={onchange}
-                />
+                <>
+                    <Form.Control
+                        as="textarea"
+                        className={`${styles.inputfield} ${styles.textarea}`}
+                        name={name}
+                        value={value}
+                        placeholder={placeholder}
+                        required={required}
+                        rows={rows}
+                        cols={cols}
+                        onChange={onChange}
+                    />
+                    {error && <p className={styles.errorMessage}>{error}</p>}
+                </>
             )}
         </div>
     );
