@@ -6,7 +6,7 @@ dotenv.config();
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    BACKEND_URL: 'localhost:5000'
+    BACKEND_URL: process.env.BACKEND_URL
   }
 };
 
