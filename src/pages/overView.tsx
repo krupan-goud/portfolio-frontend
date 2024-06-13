@@ -26,7 +26,7 @@ const OverView = () => {
                     <Row>
                         <Col lg={8} md={10} sm={12} xs={12}>
                             <h4>Introduction</h4>
-                            <h1>Overview</h1>
+                            <h1 className='innerHeading'>Overview</h1>
                             <p>
                                 I am a highly adaptable and driven individual, constantly seeking new challenges and opportunities for growth. With a passion for innovation and a knack for turning ideas into reality, I thrive in dynamic environments where creativity and teamwork are valued. I am committed to staying at the forefront of technology by continuously refining my skills and embracing experimentation. I believe in fostering a culture of continuous improvement, where failure is seen as a stepping stone to success. Together, let&apos;s embark on a journey of creativity, collaboration, and innovation, and build something truly extraordinary.
                             </p>
