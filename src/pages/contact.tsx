@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Container, Row, Col, Button } from 'react-bootstrap'
-import styles from '../styles/pages/Skills.module.css';
+import styles from '../styles/pages/skills.module.css';
 import InputField from '@/components/InputField';
 import { sendUserDetails } from '@/axios';
 import Alert from '../components/Alert';
