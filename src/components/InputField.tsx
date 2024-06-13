@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import styles from '../styles/components/InputField.module.css';
+import styles from '../styles/components/inputField.module.css';
 
 interface PropsTypes {
     label: string;
