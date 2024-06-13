@@ -13,7 +13,7 @@ import react from '../../public/images/react.png';
 import bootstrap from '../../public/images/bootstrap.png';
 import sass from '../../public/images/sass.png';
 import express from '../../public/images/express.png';
-import styles from '../styles/pages/Skills.module.css';
+import styles from '../styles/pages/skills.module.css';
 import { FaGears } from "react-icons/fa6";
 import { TiSpanner } from "react-icons/ti";
 import { FaLightbulb } from "react-icons/fa";
