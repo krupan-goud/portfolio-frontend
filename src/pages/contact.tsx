@@ -48,6 +48,7 @@ const Contact = () => {
     if (userDetails.email.length > 10 && userDetails.name.length > 3 && userDetails.message.length > 20) {
       const result = await sendUserDetails(data);
       setAlertMessage(result?.message || 'Message sent successfully');
+      setUserDetails(initializeUserDetails);
       setShowAlert(true);
     } else {
       setAlertMessage('Fill required Inputs');
@@ -56,7 +57,7 @@ const Contact = () => {
     }
   }
   useEffect(() => {
-    if (userDetails.email.length > 10 && userDetails.name.length > 3 && userDetails.message.length > 20) {
+    if (userDetails?.email?.length > 10 && userDetails?.name?.length > 3 && userDetails?.message?.length > 20) {
       setButtonDisabled(true)
     }
   }, [userDetails])
