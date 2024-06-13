@@ -16,6 +16,7 @@ const Contact = () => {
   const [userDetails, setUserDetails] = useState<any>(initializeUserDetails);
   const [alertMessage, setAlertMessage] = useState<string>('');
   const [showAlert, setShowAlert] = useState<boolean>(false);
+  const [buttonDisabled, setButtonDisabled] = useState<boolean>(false)
   const [validationErrors, setValidationErrors] = useState<any>({
     name: '',
     email: '',
@@ -54,6 +55,11 @@ const Contact = () => {
 
     }
   }
+  useEffect(() => {
+    if (userDetails.email.length > 10 && userDetails.name.length > 3 && userDetails.message.length > 20) {
+      setButtonDisabled(true)
+    }
+  }, [userDetails])
 
   const closeAlert = () => {
     setShowAlert(false);
@@ -69,7 +75,7 @@ const Contact = () => {
               <InputField label={'Full Name'} type={'text'} name={'name'} value={userDetails.name} placeholder={'Enter Full Name'} required={true} rows={0} cols={0} onchange={onchange} error={validationErrors.name} />
               <InputField label={'Email Address'} type={'email'} name={'email'} value={userDetails.email} placeholder={'Enter Email Address'} required={true} rows={0} cols={0} onchange={onchange} error={validationErrors.email} />
               <InputField label={'Message'} type={'textarea'} name={'message'} value={userDetails.message} placeholder={'Hey Krupan, I love your website! I\'d like to discuss some opportunities that you might find interesting! 💐'} required={true} rows={10} cols={12} onchange={onchange} error={validationErrors.message} />
-              <Button className={`${styles.hireMeButton} mt-4`} onClick={onSubmitHandler}>Send Message</Button>
+              <Button className={`${styles.hireMeButton} mt-4`} onClick={onSubmitHandler} disabled={!buttonDisabled}  >    Send Message  </Button>
               <p className={`${styles.copyRights} mt-4`}>Copyrights © 2024 Krupan Portfolio</p>
               <p className={`${styles.copyRights} mb-4`} > Designed and Developed by Krupan Goud Shivabandhi</p>
             </Card>
