@@ -18,10 +18,12 @@ const Experience = () => {
                                     <Col lg={12} md={12} sm={12} xs={12}><p className='text-center'>Dec-2021 to Present</p></Col>
                                     <Col lg={12} md={12} sm={12} xs={12}>
                                         <Row>
-                                            <Col lg={5} md={4} sm={12} xs={12}>
-                                                <Image src={crlogo} alt="cr" width={180} height={60} />
+                                            <Col lg={12} md={12} sm={12} xs={12}>
+                                                <Container>
+                                                    <Image src={crlogo} alt="cr" width={180} height={60} />
+                                                </Container>
                                             </Col>
-                                            <Col lg={7} md={8} sm={12} xs={12} className="companyName"><h4 className='text-center'>CriticalRiver Technologies</h4></Col>
+                                            <Col lg={12} md={12} sm={12} xs={12} className="companyName"><h4 className='text-center'>CriticalRiver Technologies</h4></Col>
                                         </Row>
                                     </Col>
                                 </Row>
