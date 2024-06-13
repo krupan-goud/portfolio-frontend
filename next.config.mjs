@@ -6,7 +6,7 @@ dotenv.config();
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    BACKEND_URL: "https://portfolio-backend-one-zeta.vercel.app"
+    BACKEND_URL: "https://portfolio-backend-dun-rho.vercel.app/"
   }
 };
 
