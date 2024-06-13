@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://portfolio-backend-one-zeta.vercel.app" + "/portFolio",
+  baseURL: "https://portfolio-backend-dun-rho.vercel.app" + "/portFolio",
 });
 
 export const sendUserDetails = async (userDetails: any) => {
