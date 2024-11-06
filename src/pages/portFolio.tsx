@@ -5,6 +5,7 @@ import Education from './work'
 import Skills from './skills'
 import Contact from './contact'
 import Experience from './experience'
+import Projects from './projects'
 
 const Main = () => {
     return (
@@ -14,6 +15,7 @@ const Main = () => {
             <Education />
             <Experience />
             <Skills />
+            <Projects />
             <Contact />
         </div>
     )
