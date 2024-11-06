@@ -15,7 +15,7 @@ const Experience = () => {
                         <Card className='cardStyles'>
                             <Container>
                                 <Row>
-                                    <Col lg={12} md={12} sm={12} xs={12}><p className='text-center'>Dec-2021 to Present</p></Col>
+                                    <Col lg={12} md={12} sm={12} xs={12}><p className='text-center'>Dec-2021 to July-2024</p></Col>
                                     <Col lg={12} md={12} sm={12} xs={12}>
                                         <Row>
                                             <Col lg={12} md={12} sm={12} xs={12}>
