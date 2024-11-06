@@ -46,6 +46,7 @@ const Skills = () => {
                 <ul>
                   <li className={styles.lineStyle}>Git + Github</li>
                   <li className={styles.lineStyle}>Command Line</li>
+                  <li className={styles.lineStyle}>Jira</li>
                   <li className={styles.lineStyle}>Chrome DevTools</li>
                   <li className={styles.lineStyle}>Postman</li>
                 </ul>
